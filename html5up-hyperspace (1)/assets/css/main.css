@@ -3969,7 +3969,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/intro.svg"), url(images/bram-32fTHX2uVa8-unsplash.jpg);
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3977,7 +3977,7 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.25em;
-		    background-color:#a7c4ac;
+		    background-color:#000000;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -4010,11 +4010,5 @@ input, select, textarea {
     left: 0px;
     z-index: 0; 
 }
-.cb-slideshow:after { 
-    content: '';
-    background: transparent url(images/fresh\ shirts.jpg) repeat top left; 
 	
 }
-
-			
-		}
