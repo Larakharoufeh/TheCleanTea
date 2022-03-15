@@ -34,11 +34,21 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<ul class="cb-slideshow">
-							<li>
-								<span>Image 01</span>
-								<div>
-									<h3>re·lax·a·tion</h3>
-								</div>
+							<script>
+								//Array of images which you want to show: Use path you want.
+								var images=new Array('images/pizza.jpg','images/fresh shirts.jpg','images/pancakes.jpg');
+								var nextimage=0;
+								doSlideshow();
+								
+								function doSlideshow(){
+									if(nextimage>=images.length){nextimage=0;}
+									$('.global-header')
+									.css('background-image','url("'+images[nextimage++]+'")')
+									.fadeIn(500,function(){
+										setTimeout(doSlideshow,1000);
+									});
+								}
+								</script>
 							</li>
 							<li><!--...--></li>
 							<li><!--...--></li>
@@ -162,7 +172,7 @@
 												<input type="text" name="email" id="email" />
 											</div>
 											<div class="field">
-												<label for="message">Message</label>
+												<label for="message">Service Description</label>
 												<textarea name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
@@ -208,14 +218,6 @@
 
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
