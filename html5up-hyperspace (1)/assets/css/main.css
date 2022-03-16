@@ -2444,7 +2444,7 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-position: calc(100% - 1rem) center;
 		height: 2.75em;
-		padding-right: 2.75em;
+		padding-right: 7.75em;
 		text-overflow: ellipsis;
 	}
 
@@ -2719,11 +2719,7 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
-	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
+	
 
 		ul li {
 			padding-left: 0.5em;
@@ -3969,7 +3965,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg"), url(images/bram-32fTHX2uVa8-unsplash.jpg);
+		background-image: url("images/intro.svg"), url("images/background.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -4001,14 +3997,9 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
-			.cb-slideshow,
-.cb-slideshow:after { 
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0; 
-}
-	
-}
+			* {box-sizing:border-box}
+			* {
+				box-sizing: border-box;
+			  }
+			  
+		}
