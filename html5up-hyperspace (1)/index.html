@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>The cle</title>
+		<title>The clean Tea</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -34,24 +34,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<ul class="cb-slideshow">
-							<script>
-								//Array of images which you want to show: Use path you want.
-								var images=new Array('images/pizza.jpg','images/fresh shirts.jpg','images/pancakes.jpg');
-								var nextimage=0;
-								doSlideshow();
-								
-								function doSlideshow(){
-									if(nextimage>=images.length){nextimage=0;}
-									$('.global-header')
-									.css('background-image','url("'+images[nextimage++]+'")')
-									.fadeIn(500,function(){
-										setTimeout(doSlideshow,1000);
-									});
-								}
-								</script>
-							</li>
-							<li><!--...--></li>
-							<li><!--...--></li>
+	
 						</ul>
 						<div class="inner">
 							<h1>The Clean Tea</h1>
@@ -98,9 +81,116 @@
 							</div>
 						</section>
 					</section>
-                 
+
+
+					<section> 
+						<div class="paragraph-container">
+						<p> udfhuebfuwebfkfgwrgjflwkeruuhujbdfjhv</p>
+						</div>
+					   <!-- Container for the image gallery -->
+<div class="container">
+
+	<!-- Full-width images with number text -->
+	<div class="mySlides">
+	  <div class="numbertext">1 / 7</div>
+		<img src="images/washing machine.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">2 / 7</div>
+		<img src="images/fresh shirts.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">3/ 7</div>
+		<img src="images/bram-32fTHX2uVa8-unsplash.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">4 / 7</div>
+		<img src="images/guitar.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">5 / 7</div>
+		<img src="images/nick-karvounis-tp_aLk0ngME-unsplash.jpg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<div class="numbertext">6 / 7</div>
+		  <img src="images/yumpizza.jpg" style="width:100%">
+	  </div>
+	  <div class="mySlides">
+		<div class="numbertext">7 / 7</div>
+		  <img src="images/yougurt and berries bowl.jpg" style="width:100%">
+	  </div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	<!-- Image text -->
+	<div class="caption-container">
+	  <p id="caption"></p>
+	</div>
+  
+	<!-- Thumbnail images -->
+	<div class="row">
+	  <div class="column">
+		<img class="demo cursor" src="images/washing machine.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Washing Area">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/fresh shirts.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dry Clean service ">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/bram-32fTHX2uVa8-unsplash.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Cafe">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/guitar.jpg" style="width:100%" onclick="currentSlide(4)" alt="Open Mic Night preformance 1/2">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/nick-karvounis-tp_aLk0ngME-unsplash.jpg" style="width:100%" onclick="currentSlide(5)" alt="Open Mic Night preformance 2/2">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/yumpizza.jpg" style="width:100%" onclick="currentSlide(6)" alt="Our Bestseller mouthwatering Margherita Pizza">
+	  </div>
+	  <div class="column">
+		<img class="demo cursor" src="images/yougurt and berries bowl.jpg" style="width:100%" onclick="currentSlide(7)" alt=" Our Refreshing Breakfast Fresh Tropical Bowl">
+	  </div>
+     
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
 		
-				
+	</body>
+	</html>
+			</section>		
 						
 				<!-- Two -->
 		<section id="two" class="wrapper style3 fade-up">
